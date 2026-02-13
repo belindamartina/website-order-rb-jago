@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeri | RB JAGO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <style>
+        .gold-gradient {
+            background: linear-gradient(135deg, #e02f18 0%, #c93434 100%);
+        }
+
+        .bg-dark-pro {
+            background-color: #0f0f0f;
+        }
+
+        .sl-wrapper .sl-navigation button,
+        .sl-wrapper .sl-close {
+            color: #df3a24 !important;
+        }
+
+        .sl-wrapper .sl-counter {
+            color: #cc3b28 !important;
+        }
+
+        /* Pastikan container overlay memenuhi seluruh area gambar */
+        .group:hover .absolute {
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Memastikan ikon font-awesome memiliki ukuran yang konsisten */
+        .fa-search-plus,
+        .fa-play {
+            display: block;
+            pointer-events: none;
+            /* Agar tidak mengganggu klik pada link */
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white">
+    <nav class="border-b border-red-600/20 bg-black/90 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter">
+                <img src="img/logo.png" class="w-23 h-12" alt="">
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest">
+                <a href="index.html" class="hover:text-red-500 transition">Beranda</a>
+                <a href="katalog.html" class="hover:text-red-500 transition">Katalog</a>
+                <a href="artikel.html" class="hover:text-red-500 transition">Artikel</a>
+                <a href="galeri.html" class="text-red-500">Galeri</a>
+            </div>
+            <a href="https://wa.me/6289515391069"
+                class="gold-gradient text-black px-5 py-2 rounded-full font-bold text-xs uppercase">Pesan</a>
+        </div>
+    </nav>
+
+    <section class="max-w-7xl mx-auto px-4 py-16 gallery">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+            <div>
+                <h1 class="text-5xl font-serif mb-2">Galeri Farm</h1>
+                <p class="text-white-500">
+                    Momen kemenangan dan dokumentasi kandang kami.
+                </p>
+            </div>
+            <div class="flex gap-4 mt-6 md:mt-0 text-sm">
+                <button id="all" class="bg-red-600 px-6 py-2 rounded-full text-black font-bold">
+                    Semua
+                </button>
+                <button id="vid"
+                    class="border border-neutral-700 px-6 py-2 rounded-full hover:bg-neutral-800 transition">
+                    Video
+                </button>
+                <button id="pict"
+                    class="border border-neutral-700 px-6 py-2 rounded-full hover:bg-neutral-800 transition">
+                    Foto
+                </button>
+            </div>
+        </div>
+
+        <div id="picture">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 gallery">
+                <div
+                    class="gallery-item group relative overflow-hidden rounded-lg cursor-pointer h-64 shadow-lg shadow-red-900/10">
+                    <a href="img/rb1.jpeg" class="block w-full h-full">
+                        <img src="img/rb1.jpeg"
+                            class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+
+                        <div
+                            class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <i class="fas fa-search-plus text-2xl"></i>
+                        </div>
+                    </a>
+                </div>
+                <div
+                    class="gallery-item group relative overflow-hidden rounded-lg cursor-pointer h-64 md:col-span-2 shadow-lg shadow-red-900/10">
+                    <a href="img/rb1.jpeg" class="block w-full h-full">
+                        <img src="img/rb1.jpeg"
+                            class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+
+                        <div
+                            class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <i class="fas fa-search-plus text-2xl"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <div
+                    class="gallery-item group relative overflow-hidden rounded-lg cursor-pointer h-64 shadow-lg shadow-red-900/10">
+                    <a href="img/rb1.jpeg" class="block w-full h-full">
+                        <img src="img/rb1.jpeg"
+                            class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+
+                        <div
+                            class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <i class="fas fa-search-plus text-2xl"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <div
+                    class="gallery-item group relative overflow-hidden rounded-lg cursor-pointer h-64 shadow-lg shadow-red-900/10">
+                    <a href="img/rb1.jpeg" class="block w-full h-full">
+                        <img src="img/rb1.jpeg"
+                            class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+                    </a>
+                </div>
+
+                <div
+                    class="gallery-item group relative overflow-hidden rounded-lg cursor-pointer h-64 shadow-lg shadow-red-900/10">
+                    <a href="img/rb1.jpeg" class="block w-full h-full">
+                        <img src="img/rb1.jpeg"
+                            class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+                    </a>
+                </div>
+
+
+                <div
+                    class="gallery-item group relative overflow-hidden rounded-lg cursor-pointer h-64 shadow-lg shadow-red-900/10">
+                    <a href="img/rb1.jpeg" class="block w-full h-full">
+                        <img src="img/rb1.jpeg"
+                            class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+                    </a>
+                </div>
+
+                <div
+                    class="gallery-item group relative overflow-hidden rounded-lg cursor-pointer h-64 shadow-lg shadow-red-900/10">
+                    <a href="img/rb1.jpeg" class="block w-full h-full">
+                        <img src="img/rb1.jpeg"
+                            class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div id="video" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div
+                class="gallery-item group relative overflow-hidden rounded-lg cursor-pointer h-64 shadow-lg shadow-red-900/10">
+                <a href="javascript:void(0)" data-video="./vid/vid1.mp4"
+                    class="video-link group relative block h-full w-full" data-type="video">
+                    <img src="img/thumb1.JPG"
+                        class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+
+                    <div
+                        class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition">
+                        <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-play text-black ml-1"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div
+                class="gallery-item group relative overflow-hidden rounded-lg cursor-pointer h-64 shadow-lg shadow-red-900/10 video-link">
+                <a href="javascript:void(0)" data-video="./vid/vid2.mp4"
+                    class="video-link group relative block h-full w-full" data-type="video">
+                    <img src="img/thumb2.JPG"
+                        class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+
+                    <div
+                        class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition">
+                        <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-play text-black ml-1"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div
+                class="gallery-item group relative overflow-hidden rounded-lg cursor-pointer h-64 shadow-lg shadow-red-900/10 video-link">
+                <a href="javascript:void(0)" data-video="./vid/vid1.mp4"
+                    class="video-link group relative block h-full w-full" data-type="video">
+                    <img src="img/thumb1.JPG"
+                        class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+
+                    <div
+                        class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition">
+                        <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-play text-black ml-1"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div
+                class="gallery-item group relative overflow-hidden rounded-lg cursor-pointer h-64 shadow-lg shadow-red-900/10 video-link">
+                <a href="javascript:void(0)" data-video="./vid/vid2.mp4"
+                    class="video-link group relative block h-full w-full" data-type="video">
+                    <img src="img/thumb2.JPG"
+                        class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+
+                    <div
+                        class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition">
+                        <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-play text-black ml-1"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div
+                class="gallery-item group relative overflow-hidden rounded-lg cursor-pointer h-64 shadow-lg shadow-red-900/10 video-link">
+                <a href="javascript:void(0)" data-video="./vid/vid1.mp4"
+                    class="video-link group relative block h-full w-full" data-type="video">
+                    <img src="img/thumb1.JPG"
+                        class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+
+                    <div
+                        class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition">
+                        <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-play text-black ml-1"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div
+                class="gallery-item group relative overflow-hidden rounded-lg cursor-pointer h-64 shadow-lg shadow-red-900/10 video-link">
+                <a href="javascript:void(0)" data-video="./vid/vid2.mp4"
+                    class="video-link group relative block h-full w-full" data-type="video">
+                    <img src="img/thumb2.JPG"
+                        class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+
+                    <div
+                        class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition">
+                        <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-play text-black ml-1"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div
+                class="gallery-item group relative overflow-hidden rounded-lg cursor-pointer h-64 shadow-lg shadow-red-900/10 video-link">
+                <a href="javascript:void(0)" data-video="./vid/vid1.mp4"
+                    class="video-link group relative block h-full w-full" data-type="video">
+                    <img src="img/thumb1.JPG"
+                        class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+
+                    <div
+                        class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition">
+                        <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-play text-black ml-1"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer class="bg-black border-t border-red-600/30 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-12 mb-12 text-center md:text-left">
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4" style="color: red">
+                    RB JAGO
+                </h3>
+                <p class="text-gray-500 text-sm">
+                    Dedikasi penuh untuk pelestarian dan pengembangan ayam laga kualitas
+                    premium di Indonesia.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold mb-4 uppercase text-sm tracking-widest" style="color: red">
+                    Hubungi Kami
+                </h3>
+                <p class="text-gray-500 text-sm">Bekasi</p>
+                <p class="text-gray-500 text-sm">WA: +62 89515391069</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold mb-4 uppercase text-sm tracking-widest" style="color: red">
+                    Ikuti Kami
+                </h3>
+                <div class="flex justify-center md:justify-start space-x-6">
+                    <a href="#" class="text-2xl hover:text-red-500"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-2xl hover:text-red-500"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="text-center text-gray-700 text-xs border-t border-neutral-900 pt-8">
+            © 2026 RB JAGO. All Rights Reserved.
+        </p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // 1. Inisialisasi Lightbox HANYA untuk gambar
+            var lightbox = new SimpleLightbox('.gallery a:not(.video-link)', {
+                overlayOpacity: 0.9,
+                uniqueImages: false
+            });
+
+            // 2. Fungsi Video Mandiri
+            const videoLinks = document.querySelectorAll('.video-link');
+
+            videoLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    // BERHENTIKAN SEMUA PROSES LAIN (Termasuk SimpleLightbox)
+                    e.preventDefault();
+                    e.stopPropagation();
+                    e.stopImmediatePropagation();
+
+                    const videoUrl = this.getAttribute('data-video');
+                    if (!videoUrl) return;
+
+                    // Buat Overlay Manual dengan z-index tertinggi yang mungkin (2147483647)
+                    const videoOverlay = document.createElement('div');
+                    videoOverlay.id = "custom-video-layer";
+                    videoOverlay.style = `
+                position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+                background: rgba(0,0,0,0.95); z-index: 999999;
+                display: flex; align-items: center; justify-content: center;
+            `;
+
+                    videoOverlay.innerHTML = `
+                <div style="position: relative; width: 90%; max-width: 800px;">
+                    <button id="force-close-btn" style="
+                        position: absolute; top: -50px; right: 0; 
+                        color: white; font-size: 50px; background: none; 
+                        border: none; cursor: pointer; z-index: 1000000;
+                        font-family: Arial, sans-serif; line-height: 1;
+                    ">&times;</button>
+                    
+                    <video id="html5-video" controls autoplay style="width: 100%; border-radius: 8px; box-shadow: 0 0 20px rgba(239, 68, 68, 0.5);">
+                        <source src="${videoUrl}" type="video/mp4">
+                    </video>
+                </div>
+            `;
+
+                    document.body.appendChild(videoOverlay);
+
+                    // LOGIKA PENUTUPAN YANG KUAT
+                    const closeBox = () => {
+                        const vidElement = document.getElementById('html5-video');
+                        if (vidElement) {
+                            vidElement.pause();
+                            vidElement.src = ""; // Kosongkan source agar video benar-benar mati
+                            vidElement.load();
+                        }
+                        videoOverlay.remove();
+                    };
+
+                    // Klik tombol X
+                    document.getElementById('force-close-btn').onclick = (ev) => {
+                        ev.stopPropagation();
+                        closeBox();
+                    };
+
+                    // Klik area hitam di luar video
+                    videoOverlay.onclick = (ev) => {
+                        if (ev.target === videoOverlay) closeBox();
+                    };
+                });
+            });
+        });
+
+        const buttonSemua = document.getElementById("all");
+        const buttonGambar = document.getElementById("pict");
+        const buttonVideo = document.getElementById("vid");
+        const sectionGambar = document.getElementById("picture");
+        const sectionVideo = document.getElementById("video");
+        const active = "bg-red-600 px-6 py-2 rounded-full text-black font-bold";
+        const inactive =
+            "border border-neutral-700 px-6 py-2 rounded-full hover:bg-neutral-800 transition";
+
+        buttonSemua.addEventListener("click", () => {
+            switch (buttonSemua.className) {
+                case inactive:
+                    buttonSemua.className = active;
+                    break;
+                case active:
+                    break;
+            }
+            switch (buttonGambar.className) {
+                case active:
+                    buttonGambar.className = inactive;
+                    break;
+                case inactive:
+                    break;
+            }
+            switch (buttonVideo.className) {
+                case active:
+                    buttonVideo.className = inactive;
+                    break;
+                case inactive:
+                    break;
+            }
+
+            if (sectionGambar.hasAttributes("style")) {
+                sectionGambar.removeAttribute("style");
+            } else if (sectionVideo.hasAttribute("style")) {
+                sectionVideo.removeAttribute("style");
+            } else {
+                return;
+            }
+        });
+        buttonGambar.addEventListener("click", () => {
+            switch (buttonGambar.className) {
+                case inactive:
+                    buttonGambar.className = active;
+                    break;
+                case active:
+                    break;
+            }
+            switch (buttonSemua.className) {
+                case active:
+                    buttonSemua.className = inactive;
+                    break;
+                case inactive:
+                    break;
+            }
+            switch (buttonVideo.className) {
+                case active:
+                    buttonVideo.className = inactive;
+                    break;
+                case inactive:
+                    break;
+            }
+            if (
+                !sectionGambar.hasAttributes("style") &&
+                !sectionVideo.hasAttribute("style")
+            ) {
+                sectionVideo.setAttribute("style", "display: none;");
+            } else {
+                sectionGambar.hasAttribute("style");
+                sectionGambar.removeAttribute("style");
+                sectionVideo.setAttribute("style", "display: none;");
+            }
+        });
+        buttonVideo.addEventListener("click", () => {
+            switch (buttonVideo.className) {
+                case inactive:
+                    buttonVideo.className = active;
+                    break;
+                case active:
+                    break;
+            }
+            switch (buttonSemua.className) {
+                case active:
+                    buttonSemua.className = inactive;
+                    break;
+                case inactive:
+                    break;
+            }
+            switch (buttonGambar.className) {
+                case active:
+                    buttonGambar.className = inactive;
+                    break;
+                case inactive:
+                    break;
+            }
+            if (
+                !sectionGambar.hasAttributes("style") &&
+                !sectionVideo.hasAttribute("style")
+            ) {
+                sectionGambar.setAttribute("style", "display: none;");
+            } else {
+                sectionVideo.hasAttribute("style");
+                sectionVideo.removeAttribute("style");
+                sectionGambar.setAttribute("style", "display: none;");
+            }
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"></script>
+</body>
+
+</html>
