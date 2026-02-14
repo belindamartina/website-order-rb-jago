@@ -408,14 +408,9 @@
                 case inactive:
                     break;
             }
+            sectionGambar.removeAttribute("style");
+            sectionVideo.removeAttribute("style");
 
-            if (sectionGambar.hasAttributes("style")) {
-                sectionGambar.removeAttribute("style");
-            } else if (sectionVideo.hasAttribute("style")) {
-                sectionVideo.removeAttribute("style");
-            } else {
-                return;
-            }
         });
         buttonGambar.addEventListener("click", () => {
             switch (buttonGambar.className) {
